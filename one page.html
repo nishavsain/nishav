@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishav Sain Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f2f2;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 300vw;
+      transition: transform 0.5s ease-in-out;
+    }
+    section {
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      overflow-y: auto;
+      scroll-snap-align: start;
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 10;
+      color: #8a5cff;
+    }
+    .prev-btn {
+      left: 10px;
+    }
+    .next-btn {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-btn {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="nav-btn prev-btn" onclick="navigate(-1)">&#10094;</button>
+  <button class="nav-btn next-btn" onclick="navigate(1)">&#10095;</button>
+  <div class="container" id="slider">
+
+    <!-- Page 1 -->
+    <section>
+      <div style="display: flex; flex-direction: row; height: 100%;">
+        <div style="flex: 1; display: flex; align-items: center; justify-content: center; background: #f7f7f7; padding: 40px;">
+          <img src="/mee.jpg" alt="Nishav Sain" style="width: 90%; height: 90%; object-fit: cover; border-radius: 0; box-shadow: none;" />
+        </div>
+        <div style="flex: 1; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; background-color: #f7f7f7;">
+          <div style="font-family: 'Bebas Neue', sans-serif; font-size: 80px; letter-spacing: 4px; margin-bottom: 20px;">NISHAV SAIN</div>
+          <div style="display: flex; gap: 40px; margin-bottom: 30px; flex-wrap: wrap;">
+            <div style="font-weight: bold; display: flex; align-items: center; gap: 8px;"><span style="color: #666; font-size: 18px;">✕</span>BUG HUNTER</div>
+            <div style="font-weight: bold; display: flex; align-items: center; gap: 8px;"><span style="color: #666; font-size: 18px;">✕</span>SECURITY RESEARCHER</div>
+          </div>
+          <div style="max-width: 600px; font-size: 14px; line-height: 1.8; color: #333; text-transform: uppercase;">
+            I’M A SELF-TAUGHT HACKER WHO GOT INTO CYBERSECURITY AFTER BEING INSPIRED BY SHOWS LIKE MR. ROBOT. WHAT STARTED AS CURIOSITY QUICKLY TURNED INTO OBSESSION — I WANTED TO UNDERSTAND HOW SYSTEMS WORK, HOW THEY BREAK, AND HOW TO FIND WHAT’S HIDDEN BENEATH. I BEGAN LEARNING THROUGH YOUTUBE, CTFS, AND HANDS-ON PRACTICE WITH TOOLS LIKE KALI LINUX, NMAP, AND BURP SUITE. I’VE SPENT HOURS DIGGING INTO VULNERABILITIES, TESTING REAL APPS, AND TEACHING MYSELF EVERYTHING FROM SCRATCH. FOR ME, HACKING ISN’T A TREND — IT’S A WAY OF THINKING, A WAY OF LIFE.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section>
+      <div style="padding: 80px 20px 40px; display: flex; flex-direction: column; align-items: center;">
+        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 72px; letter-spacing: 4px; margin-top: 20px; margin-bottom: 20px; text-align: center;">EDUCATION BACKGROUND</div>
+        <div style="width: 100%; position: relative; margin-top: -10px; margin-bottom: 50px;">
+        </div>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 60px; max-width: 1300px; width: 100%; margin-top: 40px;">
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>SELF-LEARNING</div>
+            <div style="font-size: 14px; color: #333; margin-bottom: 14px; text-transform: uppercase;">2018–2025</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              CURIOSITY LED ME TO EXPLORE ETHICAL HACKING INDEPENDENTLY. GAINED PRACTICAL KNOWLEDGE THROUGH ONLINE RESOURCES AND HANDS-ON PRACTICE WITH TOOLS LIKE KALI LINUX, NMAP, AND BURP SUITE.
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>SCHOOLING</div>
+            <div style="font-size: 14px; color: #333; margin-bottom: 14px; text-transform: uppercase;">2022–2024</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              COMPLETED HIGHER SECONDARY EDUCATION WITH A FOCUS ON COMMERCE SUBJECTS. DEVELOPED A GROWING INTEREST IN TECHNOLOGY AND CYBERSECURITY ALONGSIDE ACADEMIC STUDIES.
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>POORNIMA UNIVERSITY</div>
+            <div style="font-size: 14px; color: #333; margin-bottom: 14px; text-transform: uppercase;">2024–2026</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              PURSUING BCA IN CYBER SECURITY FROM POORNIMA UNIVERSITY, JAIPUR. FOCUSED ON SUBJECTS LIKE ETHICAL HACKING, NETWORK DEFENSE, AND DIGITAL FORENSICS. GAINING PRACTICAL SKILLS THROUGH LABS, TOOLS, AND REAL-WORLD CYBERSECURITY PROJECTS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page 3 -->
+    <section>
+      <div style="padding: 80px 20px 40px; display: flex; flex-direction: column; align-items: center;">
+        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 72px; letter-spacing: 4px; margin-top: 20px; margin-bottom: 20px; text-align: center;">WORK EXPERIENCE</div>
+        <div style="width: 100%; position: relative; margin-top: -10px; margin-bottom: 50px;">
+        </div>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 60px; max-width: 1300px; width: 100%; margin-top: 40px;">
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>CTF PLAYER</div>
+            <div style="font-size: 14px; margin-bottom: 14px; text-transform: uppercase;">HACKING</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              PARTICIPATING IN CYBERSECURITY CTF COMPETITIONS ENHANCES PRACTICAL SKILLS IN WEB EXPLOITATION, CRYPTOGRAPHY, REVERSE ENGINEERING, AND PRIVILEGE ESCALATION, WHILE ACTIVELY SOLVING CHALLENGES ON PLATFORMS LIKE TRYHACKME, HACK THE BOX, AND CTFTIME.
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>FREELANCEING</div>
+            <div style="font-size: 14px; margin-bottom: 14px; text-transform: uppercase;">SELLING ONLINE GOODS</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              ENGAGED WITH CLIENTS ON TELEGRAM TO PROVIDE HACKING SERVICES SUCH AS ACCOUNT RECOVERY AND GMAIL ACCESS, WHILE ALSO RESELLING GAMING ACCOUNTS. DEVELOPED A BUYER NETWORK AND MANAGED DIGITAL GOODS RELATED TO COMPROMISED DATA, GAINING PRACTICAL EXPERIENCE IN OSINT, SOCIAL ENGINEERING, AND SYSTEM EXPLOITATION TECHNIQUES.
+            </div>
+          </div>
+          <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start;">
+            <div style="font-weight: bold; font-size: 16px; margin-top: 60px; margin-bottom: 2px; display: flex; align-items: center; gap: 8px;"><span style="color: #8a5cff; font-size: 16px;">✕</span>BUG HUNTING</div>
+            <div style="font-size: 14px; margin-bottom: 14px; text-transform: uppercase;">WEB TESTING</div>
+            <div style="font-size: 13px; line-height: 1.9; color: #222; text-align: justify; text-transform: uppercase;">
+              ACTIVELY HUNT FOR VULNERABILITIES IN WEBSITES AND APPS, FOCUSING ON XSS, IDOR, OPEN REDIRECTS, AND AUTHENTICATION BYPASSES. USE TOOLS LIKE BURP SUITE, GOOGLE DORKING, AND MANUAL TECHNIQUES TO DISCOVER FLAWS. CONTINUOUSLY IMPROVING SKILLS THROUGH REAL-WORLD TESTING AND PRIVATE PROGRAMS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script>
+    let currentPage = 0;
+    function navigate(direction) {
+      const container = document.getElementById('slider');
+      const totalPages = container.children.length;
+      currentPage = (currentPage + direction + totalPages) % totalPages;
+      container.style.transform = `translateX(-${currentPage * 100}vw)`;
+    }
+  </script>
+</body>
+</html>
